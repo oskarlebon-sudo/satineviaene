@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -17,7 +17,6 @@ import {
 } from "lucide-react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import SEO from "./components/SEO";
 
 // Form Schema
 const contactSchema = z.object({
@@ -125,11 +124,6 @@ export default function App() {
 
   return (
     <div className="min-h-screen">
-      <SEO 
-        title="Pure momenten. Tijdloze beelden." 
-        description="Professionele allround fotografie in België door Satine Viaene. Gespecialiseerd in huwelijken, koppels, dieren en paardenfotografie."
-      />
-      
       <Navbar />
 
       {/* Hero Section */}
