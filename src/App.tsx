@@ -130,7 +130,7 @@ export default function App() {
       <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden bg-brand-dark">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://picsum.photos/seed/satine-hero/1920/1080" 
+            src="https://ddqhrvesrqlfjjtciwsr.supabase.co/storage/v1/object/public/satine/hero.jpg" 
             alt="Satine Viaene Photography Hero" 
             className="w-full h-full object-cover opacity-50"
             referrerPolicy="no-referrer"
@@ -152,16 +152,16 @@ export default function App() {
               Pure momenten.<br />
               <span className="italic font-light text-brand-warm">Tijdloze beelden.</span>
             </h1>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
               <a 
                 href="#contact" 
-                className="w-full sm:w-auto px-14 py-5 bg-brand-gold text-brand-dark text-[11px] uppercase tracking-[0.4em] font-bold hover:bg-white transition-all duration-500 shadow-2xl"
+                className="w-full sm:w-auto px-10 py-4 sm:px-14 sm:py-5 bg-brand-gold text-brand-dark text-[10px] sm:text-[11px] uppercase tracking-[0.3em] sm:tracking-[0.4em] font-bold rounded-full hover:bg-white transition-all duration-500 shadow-xl"
               >
                 Boek jouw shoot
               </a>
               <a 
                 href="#portfolio" 
-                className="w-full sm:w-auto px-14 py-5 bg-white text-brand-dark text-[11px] uppercase tracking-[0.4em] font-bold hover:bg-brand-gold hover:text-white transition-all duration-500 shadow-2xl"
+                className="w-full sm:w-auto px-10 py-4 sm:px-14 sm:py-5 border border-white/20 bg-white/10 backdrop-blur-md text-white text-[10px] sm:text-[11px] uppercase tracking-[0.3em] sm:tracking-[0.4em] font-bold rounded-full hover:bg-white hover:text-brand-dark transition-all duration-500 shadow-xl"
               >
                 Bekijk portfolio
               </a>
@@ -232,13 +232,13 @@ export default function App() {
             {/* Scroll Buttons - Positioned on the scroll area */}
             <button 
               onClick={() => document.getElementById('services-scroll')?.scrollBy({ left: -350, behavior: 'smooth' })}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 rounded-full bg-white shadow-xl border border-brand-dark/5 flex items-center justify-center hover:bg-brand-gold hover:text-white transition-all opacity-0 group-hover:opacity-100 hidden md:flex"
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 sm:-translate-x-4 z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white shadow-xl border border-brand-dark/5 flex items-center justify-center hover:bg-brand-gold hover:text-white transition-all"
             >
               <ArrowRight size={18} className="rotate-180" />
             </button>
             <button 
               onClick={() => document.getElementById('services-scroll')?.scrollBy({ left: 350, behavior: 'smooth' })}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-12 h-12 rounded-full bg-white shadow-xl border border-brand-dark/5 flex items-center justify-center hover:bg-brand-gold hover:text-white transition-all opacity-0 group-hover:opacity-100 hidden md:flex"
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 sm:translate-x-4 z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white shadow-xl border border-brand-dark/5 flex items-center justify-center hover:bg-brand-gold hover:text-white transition-all"
             >
               <ArrowRight size={18} />
             </button>
